@@ -1,13 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    { 
-      "src": "api/index.js", 
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "10mb"
-      }
+  "rewrites": [
+    {
+      "source": "/mcp(.*)",
+      "destination": "/api/index"
     }
-  ],
-  "routes": [{ "src": "/mcp(.*)", "dest": "/api/index.js" }]
+  ]
 }
