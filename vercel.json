@@ -9,10 +9,5 @@
       }
     }
   ],
-  "routes": [{ "src": "/mcp(.*)", "dest": "/api/index.js" }],
-  "functions": {
-    "api/index.js": {
-      "maxDuration": 10
-    }
-  }
+  "routes": [{ "src": "/mcp(.*)", "dest": "/api/index.js" }]
 }
