@@ -1,5 +1,5 @@
-import express from "express";
-import cors from "cors";
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
@@ -62,4 +62,4 @@ function escapeMd(s = "") {
   return String(s).replace(/\*/g, "\\*").replace(/_/g, "\\_");
 }
 
-export default app; // important: export the express app
+module.exports = app; // important: export the express app

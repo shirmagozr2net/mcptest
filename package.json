@@ -1,7 +1,6 @@
 {
   "name": "stupid-mcp-image-service",
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
